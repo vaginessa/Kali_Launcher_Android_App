@@ -26,7 +26,7 @@ public class LaunchKali extends Activity {
         });
 
         /**
-         * LAUNCH KALI CHROOT
+         * SHUTDOWN KALI CHROOT
          */
         addClickListener(R.id.button_stop_kali, new View.OnClickListener() {
             public void onClick(View v) {
