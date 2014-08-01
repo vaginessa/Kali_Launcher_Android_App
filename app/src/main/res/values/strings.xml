@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kali Launcher</string>
+    <string name="launch_kali">Launch Kali</string>
+    <string name="kill_kali">Shutdown Kali</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
