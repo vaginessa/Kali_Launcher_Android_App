@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">Kali Launcher</string>
-    <string name="launch_kali">Launch Kali</string>
+    <string name="launch_kali_menu">Launch Kali Menu</string>
+    <string name="launch_kali_shell">Launch Kali Shell</string>
     <string name="kill_kali">Shutdown Kali</string>
     <string name="action_settings">Settings</string>
 

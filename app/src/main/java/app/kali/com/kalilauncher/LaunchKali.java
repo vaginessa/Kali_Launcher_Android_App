@@ -26,6 +26,19 @@ public class LaunchKali extends Activity {
         });
 
         /**
+         * LAUNCH KALI MENU
+         */
+        addClickListener(R.id.button_start_kalimenu, new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent =
+                        new Intent("jackpal.androidterm.RUN_SCRIPT");
+                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                intent.putExtra("jackpal.androidterm.iInitialCommand", "su\nbootkali\nkalimenu");
+                startActivity(intent);
+            }
+        });
+
+        /**
          * SHUTDOWN KALI CHROOT
          */
         addClickListener(R.id.button_stop_kali, new View.OnClickListener() {
