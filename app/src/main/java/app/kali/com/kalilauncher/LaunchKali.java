@@ -50,6 +50,32 @@ public class LaunchKali extends Activity {
                 startActivity(intent);
             }
         });
+
+        /**
+         * Start Webserver
+         */
+        addClickListener(R.id.button_start_web, new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent =
+                        new Intent("jackpal.androidterm.RUN_SCRIPT");
+                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                intent.putExtra("jackpal.androidterm.iInitialCommand", "su\nstart-web");
+                startActivity(intent);
+            }
+        });
+
+        /**
+         * Stop Webserver
+         */
+        addClickListener(R.id.button_stop_web, new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent =
+                        new Intent("jackpal.androidterm.RUN_SCRIPT");
+                intent.addCategory(Intent.CATEGORY_DEFAULT);
+                intent.putExtra("jackpal.androidterm.iInitialCommand", "su\nstop-web");
+                startActivity(intent);
+            }
+        });
     }
 
     private void addClickListener(int buttonId, View.OnClickListener onClickListener) {
